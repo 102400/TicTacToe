@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="＜---people vs computer"/>
+
+        <TextView
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="people vs computer"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/edit_text_host"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="host"
+            android:text=""/>
+
+        <ToggleButton
+            android:id="@+id/toggle_button_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textOff="connect"
+            android:textOn="disconnect"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="match"/>
+
+        <ToggleButton
+            android:id="@+id/button_ready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="ready"
+            android:textOn="cancel"/>
+
+        <TextView
+            android:id="@+id/textview_service_infobox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wait to connect"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/chessboard"/>
+    </LinearLayout>
+
+</LinearLayout>
