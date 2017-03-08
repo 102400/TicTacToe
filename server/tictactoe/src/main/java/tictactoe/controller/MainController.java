@@ -13,9 +13,9 @@ public class MainController {
         return "index";
     }
     
-    @RequestMapping(value = "/hello", method = RequestMethod.GET)
-    public String hello(Model model) {
-    	model.addAttribute("message", "Hello World");
-        return "hello";
-    }
+//    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+//    public String hello(Model model) {
+//    	model.addAttribute("message", "Hello World");
+//        return "hello";
+//    }
 }

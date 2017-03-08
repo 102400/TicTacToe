@@ -143,7 +143,7 @@ public class MatchFragment extends Fragment {
 
         initService();
         //dev
-        mEditTextHost.setText("223.166.8.222:8080");
+        mEditTextHost.setText("192.168.1.102:8080");
         //
         mButtonX.setBackgroundColor(Color.parseColor("#00FF00"));  //default ,green
         mButtonO.setBackgroundColor(Color.parseColor("#FFFF00"));  //default ,yellow
@@ -159,10 +159,11 @@ public class MatchFragment extends Fragment {
                     @Override
                     public void onClick(View v) {
                         if(mCanPlay) {
-
+                            mCanPlay = false;
+//                            mCanPlay = !mCanPlay;
                             new PlayTask().execute(a, b);
 
-                            mCanPlay = false;
+//                            mCanPlay = false;
                         }
                     }
                 });
@@ -548,11 +549,11 @@ public class MatchFragment extends Fragment {
             if(isPlayOk) {
                 if(!mMyPawn) {
                     mButtonArray[i][j].setText("X");
-                    mCanPlay = !mCanPlay;
+//                    mCanPlay = !mCanPlay;  //修改
                 }
                 else {
                     mButtonArray[i][j].setText("O");
-                    mCanPlay = !mCanPlay;
+//                    mCanPlay = !mCanPlay;
                 }
             }
         }
