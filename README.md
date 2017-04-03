@@ -4,3 +4,5 @@
 客户端:android
 
 服务端:spring mvc
+
+细节见 TicTacToe.pdf
